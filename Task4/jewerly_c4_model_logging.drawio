@@ -1,0 +1,224 @@
+<mxfile host="65bd71144e">
+    <diagram name="Logging" id="logging-diagram">
+        <mxGraphModel dx="605" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2200" pageHeight="1400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <object placeholders="1" c4Name="MES API" c4Type="Container" c4Technology="C# + Serilog JSON" c4Description="- Calculates price, dashboard&#10;- Structured logs: order_id, trace_id" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-1">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#CC0000;strokeWidth=3;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="530" y="890" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Messages Queue" c4Type="Container" c4Technology="RabbitMQ" c4Description="Server logs: publish, consume, DLQ" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%:&amp;nbsp;%c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-2">
+                    <mxCell style="shape=cylinder3;size=15;direction=south;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#CC0000;strokeWidth=3;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1440" y="640" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Internet Shop" c4Type="Container" c4Technology="Vue" c4Description="Frontend errors to API" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-3">
+                    <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="520" y="260" width="240" height="160" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="MES" c4Type="Container" c4Technology="React" c4Description="Operator UI" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-4">
+                    <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="530" y="1070" width="240" height="160" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-5" target="6bDfexBDMjg7O7AECw8N-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Operator" c4Type="Person" c4Description="Manufactures jewelry" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-5">
+                    <mxCell style="html=1;fontSize=11;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="80" y="960" width="200" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Customer" c4Type="Person" c4Description="B2C customer" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-6">
+                    <mxCell style="html=1;fontSize=11;fillColor=#6C6477;strokeColor=#4D4D4D;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="80" y="250" width="200" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="API user" c4Type="Person" c4Description="B2B partner" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-7">
+                    <mxCell style="html=1;fontSize=11;fillColor=#6C6477;strokeColor=#4D4D4D;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="80" y="700" width="200" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Shop API" c4Type="Container" c4Technology="SpringBoot + Logback JSON" c4Description="- Orders, 3d upload&#10;- Structured logs (P1)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-8">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#CC0000;strokeWidth=3;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="910" y="280" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="CRM" c4Type="Container" c4Technology="Vue" c4Description="Seller UI" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-9">
+                    <mxCell style="shape=mxgraph.c4.webBrowserContainer2;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;fillColor=#23A2D9;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="530" y="530" width="240" height="160" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="CRM API" c4Type="Container" c4Technology="SpringBoot + Logback JSON" c4Description="- Order confirmation&#10;- RabbitMQ publish/consume logs" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-10">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#CC0000;strokeWidth=3;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1090" y="550" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Shop DB" c4Type="Container" c4Technology="PostgreSQL" c4Description="Managed DB audit logs (P3)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-11">
+                    <mxCell style="shape=cylinder3;size=20;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1400" y="280" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-10" target="6bDfexBDMjg7O7AECw8N-11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-8" target="6bDfexBDMjg7O7AECw8N-11" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-3" target="6bDfexBDMjg7O7AECw8N-8" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;startFill=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-10" target="6bDfexBDMjg7O7AECw8N-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;startFill=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-1" target="6bDfexBDMjg7O7AECw8N-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-4" target="6bDfexBDMjg7O7AECw8N-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Jewerly Store System" c4Type="SystemScopeBoundary" c4Application="Software System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Application%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-19">
+                    <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;align=left;verticalAlign=bottom;dashPattern=8 4;connectable=0;" parent="1" vertex="1">
+                        <mxGeometry x="500" y="235" width="1220" height="1065" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-7" target="6bDfexBDMjg7O7AECw8N-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-9" target="6bDfexBDMjg7O7AECw8N-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-6" target="6bDfexBDMjg7O7AECw8N-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="3d files storage" c4Type="Container" c4Technology="S3" c4Description="Access logs (P3)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-25">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#23A2D9;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0E7DAD;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="900" y="780" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-1" target="6bDfexBDMjg7O7AECw8N-25" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="650" y="830"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-8" target="6bDfexBDMjg7O7AECw8N-25" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="960" y="400"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <object placeholders="1" c4Name="Seller" c4Type="Person" c4Description="Confirms orders" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-30">
+                    <mxCell style="html=1;fontSize=11;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="80" y="480" width="200" height="180" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-30" target="6bDfexBDMjg7O7AECw8N-9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="MES db" c4Type="Container" c4Technology="PostgreSQL" c4Description="Managed DB audit (P3)" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="6bDfexBDMjg7O7AECw8N-32">
+                    <mxCell style="shape=cylinder3;size=15;whiteSpace=wrap;html=1;boundedLbl=1;rounded=0;fillColor=#23A2D9;fontSize=12;fontColor=#ffffff;align=center;strokeColor=#0E7DAD;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1414" y="1060" width="240" height="120" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-1" target="6bDfexBDMjg7O7AECw8N-32" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1092" y="990"/>
+                            <mxPoint x="1092" y="1128"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6bDfexBDMjg7O7AECw8N-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="6bDfexBDMjg7O7AECw8N-25" target="6bDfexBDMjg7O7AECw8N-10" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="Log Aggregation Platform" c4Type="SystemScopeBoundary" c4Application="Logging" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;font color=&quot;#CC0000&quot;&gt;%c4Name%&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Application%]&lt;/div&gt;" id="log-boundary">
+                    <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#CC0000;strokeWidth=2;fontColor=#CC0000;align=left;verticalAlign=bottom;dashPattern=8 4;connectable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1780" y="300" width="360" height="580" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Fluent Bit" c4Type="Container" c4Technology="Log agent" c4Description="On each EC2. Collects stdout JSON logs" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="log-fluentbit">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#FF6666;strokeColor=#CC0000;strokeWidth=2;fontColor=#ffffff;align=center;arcSize=10;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1810" y="340" width="300" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="2" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="log-otel" target="log-fluentbit">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="log-otel" target="log-fluentbit">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <object placeholders="1" c4Name="OTel Collector" c4Type="Container" c4Technology="OpenTelemetry" c4Description="PII masking, batch, route to Loki" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="log-otel">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#FF6666;strokeColor=#CC0000;strokeWidth=2;fontColor=#ffffff;align=center;arcSize=10;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1810" y="470" width="300" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Loki" c4Type="Container" c4Technology="Grafana Loki" c4Description="Log storage. Labels: service, level. S3 backend" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="log-loki">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#FF6666;strokeColor=#CC0000;strokeWidth=2;fontColor=#ffffff;align=center;arcSize=10;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1810" y="600" width="300" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Grafana" c4Type="Container" c4Technology="Grafana" c4Description="Search by order_id. Alerts. Link to Tempo traces" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%: %c4Technology%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#E6E6E6&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="log-grafana">
+                    <mxCell style="rounded=1;whiteSpace=wrap;html=1;fontSize=11;fillColor=#FF6666;strokeColor=#CC0000;strokeWidth=2;fontColor=#ffffff;align=center;arcSize=10;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="1810" y="730" width="300" height="90" as="geometry"/>
+                    </mxCell>
+                </object>
+                <object placeholders="1" c4Name="Support / Engineer" c4Type="Person" c4Description="Search logs by order_id" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;" id="log-support">
+                    <mxCell style="html=1;fontSize=11;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" parent="1" vertex="1">
+                        <mxGeometry x="2170" y="90" width="200" height="160" as="geometry"/>
+                    </mxCell>
+                </object>
+                <mxCell id="log-legend" value="&lt;b&gt;Красная обводка&lt;/b&gt; — источники логов (P0/P1)&#10;&lt;b&gt;Красный fill&lt;/b&gt; — новые компоненты платформы логирования" style="text;html=1;strokeColor=#CC0000;fillColor=none;align=left;verticalAlign=middle;fontSize=12;spacingLeft=8;" parent="1" vertex="1">
+                    <mxGeometry x="1780" y="920" width="360" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="log-e1" value="JSON logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;dashed=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="6bDfexBDMjg7O7AECw8N-8" target="log-fluentbit" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="log-e2" value="JSON logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;dashed=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-10" target="log-fluentbit" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1210" y="360"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="log-e3" value="JSON logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;dashed=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-1" target="log-fluentbit" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1740" y="950"/>
+                            <mxPoint x="1740" y="385"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="log-e4" value="server logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;dashed=1;" parent="1" source="6bDfexBDMjg7O7AECw8N-2" target="log-fluentbit" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1700" y="700"/>
+                            <mxPoint x="1700" y="390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="log-e5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;" parent="1" source="log-fluentbit" target="log-otel" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="log-e6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;" parent="1" source="log-otel" target="log-loki" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="log-e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;" parent="1" source="log-loki" target="log-grafana" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="log-e8" value="search order_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#CC0000;strokeWidth=2;" parent="1" source="log-support" target="log-grafana" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="2240" y="775"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
